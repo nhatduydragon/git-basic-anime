@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        th{
+            /* background-color: #8A2BE2; */
+            display: block;
+            width: 100%;
+        }
+        td{
+            /* background-color: #7FFFD4; */
+        }
+        td input[type=text]{
+            display: block;
+            width: 100%;
+        }
+        td input[type=submit]{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="info.php" method="POST" enctype="multipart/form-data" >
+        <table cellspacing="0" cellpadding="10">
+            <tr>
+                <th>NHẬP THÔNG TIN</th>
+            </tr>
+            <tr>
+                <td>Tên tài liệu</td>
+                <td><input type="text" name="tentailieu"></td>
+            </tr>
+            <tr>
+                <td>Người bán</td>
+                <td><input type="text" name="nguoiban"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Giá cả</td>
+                <td><input type="text" name="giaca"></td>
+            </tr>
+            <tr>
+                <td>Hình ảnh tài liệu</td>
+                <td><input type="file" name="hinh" value="name"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Đăng bán"></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
